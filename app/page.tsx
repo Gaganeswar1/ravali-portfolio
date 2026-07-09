@@ -31,9 +31,9 @@ export default function Home() {
           zIndex: 0,
           pointerEvents: "none",
           background:
-            "radial-gradient(circle at 15% 18%, rgba(56,189,248,0.05), transparent 50%)," +
+            "radial-gradient(circle at 15% 18%, rgba(16,185,129,0.05), transparent 50%)," +
             "radial-gradient(circle at 88% 82%, rgba(124,58,237,0.04), transparent 52%)," +
-            "#050816",
+            "#0F172A",
         }}
       />
 
@@ -154,8 +154,8 @@ export default function Home() {
               whileTap={{ scale: 0.98 }}
               style={{
                 background: "linear-gradient(135deg,#10B981,#059669)",
-                boxShadow: "0 8px 22px rgba(56,189,248,.22)",
-                color: "#050816",
+                boxShadow: "0 8px 22px rgba(56,189,248,.12)",
+                color: "#0F172A",
                 textDecoration: "none",
                 padding: "14px 30px",
                 borderRadius: "12px",

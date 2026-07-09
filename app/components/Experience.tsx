@@ -132,7 +132,7 @@ export default function Experience() {
                   height: '16px',
                   borderRadius: '50%',
                   background: '#10B981',
-                  boxShadow: '0 0 22px rgba(56,189,248,.85)',
+                  boxShadow: '0 0 22px rgba(16,185,129,.85)',
                 }}
               />
 

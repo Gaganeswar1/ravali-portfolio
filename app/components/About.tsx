@@ -41,9 +41,9 @@ export default function About() {
             transition: 'all .08s ease-out',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(56,189,248,.45)';
+            e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
             e.currentTarget.style.boxShadow =
-              '0 0 35px rgba(56,189,248,.22),0 10px 35px rgba(0,0,0,.35)';
+              '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';

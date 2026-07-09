@@ -67,9 +67,9 @@ export default function Contact() {
             transition: 'all .08s ease-out',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(56,189,248,.45)';
+            e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
             e.currentTarget.style.boxShadow =
-              '0 0 35px rgba(56,189,248,.22),0 10px 35px rgba(0,0,0,.35)';
+              '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
@@ -148,12 +148,12 @@ export default function Contact() {
               target="_blank"
               style={{
                 background: 'linear-gradient(135deg,#10B981,#059669)',
-                color: '#050816',
+                color: '#0F172A',
                 textDecoration: 'none',
                 padding: '14px 30px',
                 borderRadius: '12px',
                 fontWeight: 700,
-                boxShadow: '0 8px 22px rgba(56,189,248,.22)',
+                boxShadow: '0 8px 22px rgba(56,189,248,.12)',
               }}
             >
               Download Resume
