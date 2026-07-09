@@ -79,7 +79,7 @@ export default function Navbar() {
           }}
         >
           <span style={{ fontSize: "30px", fontWeight: 800, color: "#fff" }}>
-            RG
+            RP
           </span>
 
           <span

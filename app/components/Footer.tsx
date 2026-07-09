@@ -27,7 +27,7 @@ export default function Footer() {
         </p>
 
         <p style={{ margin: 0, fontSize: '14px' }}>
-  © {new Date().getFullYear()} RAVALI GUTTULA. Built with Next.js.
+  © {new Date().getFullYear()} RAVALI PALA. Built with Next.js.
 </p>
       </div>
     </footer>

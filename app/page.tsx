@@ -15,7 +15,7 @@ export default function Home() {
     stiffness: 120,
     damping: 30,
   });
-
+  
   const stats = [
     { title: "1.5+", value: "Years Experience" },
     { title: "MCA", value: "Computer Science" },
@@ -105,7 +105,7 @@ export default function Home() {
               textShadow: "0 0 18px rgba(56,189,248,.12)",
             }}
           >
-            RAVALI GUTTULA
+            RAVALI PALA
           </motion.h1>
 
           <motion.p
@@ -148,7 +148,7 @@ export default function Home() {
             }}
           >
             <motion.a
-              href="/Ravali_Resume.pdf"
+              href="/Ravali_resume.pdf"
               target="_blank"
               whileHover={{ y: -3, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
@@ -164,6 +164,7 @@ export default function Home() {
             >
               Download Resume
             </motion.a>
+            
 
             <motion.a
               href="#contact"
@@ -220,11 +221,11 @@ export default function Home() {
       </section>
 
       <div style={{ position: "relative", zIndex: 2 }}>
-        <About />
-        <Skills />
-        <Experience />
-        <Contact />
-        <Footer />
+      <About />
+  { <Skills /> }
+  {<Experience /> }
+  { <Contact /> }
+  { <Footer /> }
       </div>
     </>
   );
