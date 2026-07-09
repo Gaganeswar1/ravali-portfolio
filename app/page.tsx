@@ -46,7 +46,7 @@ export default function Home() {
           left: 0,
           right: 0,
           height: "3px",
-          background: "linear-gradient(90deg,#38BDF8,#2563EB)",
+          background: "linear-gradient(90deg,#10B981,#059669)",
           zIndex: 99999,
         }}
       />
@@ -82,7 +82,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
             style={{
-              color: "#38BDF8",
+              color: "#10B981",
               letterSpacing: "4px",
               fontSize: "14px",
               fontWeight: 600,
@@ -153,7 +153,7 @@ export default function Home() {
               whileHover={{ y: -3, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               style={{
-                background: "linear-gradient(135deg,#38BDF8,#2563EB)",
+                background: "linear-gradient(135deg,#10B981,#059669)",
                 boxShadow: "0 8px 22px rgba(56,189,248,.22)",
                 color: "#050816",
                 textDecoration: "none",
@@ -202,12 +202,12 @@ export default function Home() {
                   background: "rgba(15,23,42,.45)",
                   backdropFilter: "blur(18px)",
                   WebkitBackdropFilter: "blur(18px)",
-                  border: "1px solid rgba(56,189,248,.15)",
+                  border: "1px solid rgba(16,185,129,.15)",
                   borderRadius: "16px",
                   boxShadow: "0 8px 25px rgba(0,0,0,.35)",
                 }}
               >
-                <h2 style={{ margin: 0, color: "#38BDF8", fontSize: "28px" }}>
+                <h2 style={{ margin: 0, color: "#10B981", fontSize: "28px" }}>
                   {item.title}
                 </h2>
 

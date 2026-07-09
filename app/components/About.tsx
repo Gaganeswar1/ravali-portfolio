@@ -34,7 +34,7 @@ export default function About() {
             background: 'rgba(15,23,42,.45)',
             backdropFilter: 'blur(18px)',
             WebkitBackdropFilter: 'blur(18px)',
-            border: '1px solid rgba(56,189,248,.15)',
+            border: '1px solid rgba(16,185,129,.15)',
             borderRadius: '22px',
             padding: '42px',
             boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -46,12 +46,12 @@ export default function About() {
               '0 0 35px rgba(56,189,248,.22),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(56,189,248,.15)';
+            e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
             e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
           }}
         >
           <h3
-            style={{ color: '#38BDF8', margin: '0 0 18px', fontSize: '28px' }}
+            style={{ color: '#10B981', margin: '0 0 18px', fontSize: '28px' }}
           >
             IT Technical Recruiter
           </h3>
@@ -65,18 +65,18 @@ export default function About() {
             }}
           >
             I am an{' '}
-            <span style={{ color: '#38BDF8', fontWeight: 700 }}>
+            <span style={{ color: '#10B981', fontWeight: 700 }}>
               IT Technical Recruiter
             </span>{' '}
             with{' '}
-            <span style={{ color: '#38BDF8', fontWeight: 700 }}>1.5 years</span>{' '}
+            <span style={{ color: '#10B981', fontWeight: 700 }}>1.5 years</span>{' '}
             of experience in end-to-end recruitment, specializing in sourcing,
             screening, interview coordination, rate negotiation, and hiring for
             Full-Time, Contract, and C2H roles.
             <br />
             <br />
             I have hands-on experience using{' '}
-            <span style={{ color: '#38BDF8', fontWeight: 700 }}>
+            <span style={{ color: '#10B981', fontWeight: 700 }}>
               LinkedIn Recruiter, Naukri, Monster, and TechGig
             </span>{' '}
             to identify, engage, and recruit qualified candidates across various

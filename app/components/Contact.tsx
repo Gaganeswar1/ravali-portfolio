@@ -60,7 +60,7 @@ export default function Contact() {
             background: 'rgba(15,23,42,.45)',
             backdropFilter: 'blur(18px)',
             WebkitBackdropFilter: 'blur(18px)',
-            border: '1px solid rgba(56,189,248,.15)',
+            border: '1px solid rgba(16,185,129,.15)',
             borderRadius: '22px',
             padding: '42px',
             boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -72,7 +72,7 @@ export default function Contact() {
               '0 0 35px rgba(56,189,248,.22),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(56,189,248,.15)';
+            e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
             e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
           }}
         >
@@ -147,7 +147,7 @@ export default function Contact() {
               href="/Ravali_resume.pdf"
               target="_blank"
               style={{
-                background: 'linear-gradient(135deg,#38BDF8,#2563EB)',
+                background: 'linear-gradient(135deg,#10B981,#059669)',
                 color: '#050816',
                 textDecoration: 'none',
                 padding: '14px 30px',

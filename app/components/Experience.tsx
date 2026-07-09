@@ -83,7 +83,7 @@ export default function Experience() {
               bottom: 0,
               width: '2px',
               background:
-                'linear-gradient(to bottom,#38BDF8,rgba(56,189,248,.08))',
+                'linear-gradient(to bottom,#10B981,rgba(56,189,248,.08))',
             }}
           />
 
@@ -131,7 +131,7 @@ export default function Experience() {
                   width: '16px',
                   height: '16px',
                   borderRadius: '50%',
-                  background: '#38BDF8',
+                  background: '#10B981',
                   boxShadow: '0 0 22px rgba(56,189,248,.85)',
                 }}
               />
@@ -148,7 +148,7 @@ export default function Experience() {
                   background: 'rgba(15,23,42,.45)',
                   backdropFilter: 'blur(18px)',
                   WebkitBackdropFilter: 'blur(18px)',
-                  border: '1px solid rgba(56,189,248,.15)',
+                  border: '1px solid rgba(16,185,129,.15)',
                   borderRadius: '22px',
                   padding: '35px',
                   boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -167,7 +167,7 @@ export default function Experience() {
                       style={{
                         margin: 0,
                         fontSize: '28px',
-                        color: '#38BDF8',
+                        color: '#10B981',
                       }}
                     >
                       {job.role}
