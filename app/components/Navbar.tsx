@@ -85,7 +85,7 @@ export default function Navbar() {
           <span
             style={{
               fontSize: "34px",
-              color: "#10B981",
+              color: "#B03060",
               marginLeft: "2px",
               lineHeight: 1,
             }}
@@ -111,7 +111,7 @@ export default function Navbar() {
                 transition: ".25s",
                 textShadow:
                   active === id
-                    ? "0 0 40px rgba(16,185,129,1)"
+                    ? "0 0 35px rgba(176,48,96,.9)"
                     : "none",
                 filter:
                   active === id
@@ -146,7 +146,7 @@ export default function Navbar() {
                   setOpen(false);
                 }}
                 style={{
-                  color: active === id ? "#10B981" : "#CBD5E1",
+                  color: active === id ? "#B03060" : "#CBD5E1",
                   textDecoration: "none",
                   padding: "14px 10px",
                   fontWeight: active === id ? 700 : 500,

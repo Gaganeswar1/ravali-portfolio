@@ -83,7 +83,7 @@ export default function Experience() {
               bottom: 0,
               width: '2px',
               background:
-                'linear-gradient(to bottom,#10B981,rgba(56,189,248,.08))',
+                'linear-gradient(to bottom,#B03060,rgba(16,185,129,.08))',
             }}
           />
 
@@ -131,7 +131,7 @@ export default function Experience() {
                   width: '16px',
                   height: '16px',
                   borderRadius: '50%',
-                  background: '#10B981',
+                  background: '#B03060',
                   boxShadow: '0 0 22px rgba(16,185,129,.85)',
                 }}
               />
@@ -145,10 +145,10 @@ export default function Experience() {
                   },
                 }}
                 style={{
-                  background: 'rgba(15,23,42,.45)',
+                  background: 'rgba(40,18,28,.55)',
                   backdropFilter: 'blur(18px)',
                   WebkitBackdropFilter: 'blur(18px)',
-                  border: '1px solid rgba(16,185,129,.15)',
+                  border: '1px solid rgba(176,48,96,.20)',
                   borderRadius: '22px',
                   padding: '35px',
                   boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -167,7 +167,7 @@ export default function Experience() {
                       style={{
                         margin: 0,
                         fontSize: '28px',
-                        color: '#10B981',
+                        color: '#B03060',
                       }}
                     >
                       {job.role}
@@ -255,7 +255,7 @@ export default function Experience() {
                           padding: '10px 18px',
                           borderRadius: '999px',
                           background: 'rgba(255,255,255,.05)',
-                          border: '1px solid rgba(56,189,248,.12)',
+                          border: '1px solid rgba(16,185,129,.12)',
                           color: '#E2E8F0',
                           fontSize: '14px',
                         }}

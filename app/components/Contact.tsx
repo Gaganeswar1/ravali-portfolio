@@ -57,10 +57,10 @@ export default function Contact() {
         <motion.div
           whileHover={{ y: -6, scale: 1.01, transition: { duration: 0.25 } }}
           style={{
-            background: 'rgba(15,23,42,.45)',
+            background: 'rgba(40,18,28,.55)',
             backdropFilter: 'blur(18px)',
             WebkitBackdropFilter: 'blur(18px)',
-            border: '1px solid rgba(16,185,129,.15)',
+            border: '1px solid rgba(176,48,96,.20)',
             borderRadius: '22px',
             padding: '42px',
             boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -69,10 +69,10 @@ export default function Contact() {
           onMouseEnter={(e) => {
             e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
             e.currentTarget.style.boxShadow =
-              '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
+              '0 0 35px rgba(16,185,129,.12),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
+            e.currentTarget.style.border = '1px solid rgba(176,48,96,.20)';
             e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
           }}
         >
@@ -98,7 +98,7 @@ export default function Contact() {
                 style={{
                   textDecoration: 'none',
                   background: 'rgba(255,255,255,.04)',
-                  border: '1px solid rgba(56,189,248,.12)',
+                  border: '1px solid rgba(16,185,129,.12)',
                   borderRadius: '16px',
                   padding: '24px',
                   display: 'flex',
@@ -147,13 +147,13 @@ export default function Contact() {
               href="/Ravali_resume.pdf"
               target="_blank"
               style={{
-                background: 'linear-gradient(135deg,#10B981,#059669)',
-                color: '#0F172A',
+                background: 'linear-gradient(135deg,#8B1E3F,#B03060)',
+                color: '#FFF',
                 textDecoration: 'none',
                 padding: '14px 30px',
                 borderRadius: '12px',
                 fontWeight: 700,
-                boxShadow: '0 8px 22px rgba(56,189,248,.12)',
+                boxShadow: '0 8px 22px rgba(16,185,129,.12)',
               }}
             >
               Download Resume

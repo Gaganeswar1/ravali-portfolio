@@ -19,7 +19,7 @@ export default function Footer() {
             marginBottom: '10px',
           }}
         >
-          RG<span style={{ color: '#10B981' }}>.</span>
+          RG<span style={{ color: '#B03060' }}>.</span>
         </div>
 
         <p style={{ margin: '0 0 18px' }}>

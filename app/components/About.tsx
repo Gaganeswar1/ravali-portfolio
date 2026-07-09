@@ -31,10 +31,10 @@ export default function About() {
           transition={{ duration: 0.55, ease: 'easeOut' }}
           whileHover={{ y: -6, scale: 1.01, transition: { duration: 0.25 } }}
           style={{
-            background: 'rgba(15,23,42,.45)',
+            background: 'rgba(40,18,28,.55)',
             backdropFilter: 'blur(18px)',
             WebkitBackdropFilter: 'blur(18px)',
-            border: '1px solid rgba(16,185,129,.15)',
+            border: '1px solid rgba(176,48,96,.20)',
             borderRadius: '22px',
             padding: '42px',
             boxShadow: '0 10px 35px rgba(0,0,0,.35)',
@@ -51,7 +51,7 @@ export default function About() {
           }}
         >
           <h3
-            style={{ color: '#10B981', margin: '0 0 18px', fontSize: '28px' }}
+            style={{ color: '#B03060', margin: '0 0 18px', fontSize: '28px' }}
           >
             IT Technical Recruiter
           </h3>
@@ -65,18 +65,18 @@ export default function About() {
             }}
           >
             I am an{' '}
-            <span style={{ color: '#10B981', fontWeight: 700 }}>
+            <span style={{ color: '#B03060', fontWeight: 700 }}>
               IT Technical Recruiter
             </span>{' '}
             with{' '}
-            <span style={{ color: '#10B981', fontWeight: 700 }}>1.5 years</span>{' '}
+            <span style={{ color: '#B03060', fontWeight: 700 }}>1.5 years</span>{' '}
             of experience in end-to-end recruitment, specializing in sourcing,
             screening, interview coordination, rate negotiation, and hiring for
             Full-Time, Contract, and C2H roles.
             <br />
             <br />
             I have hands-on experience using{' '}
-            <span style={{ color: '#10B981', fontWeight: 700 }}>
+            <span style={{ color: '#B03060', fontWeight: 700 }}>
               LinkedIn Recruiter, Naukri, Monster, and TechGig
             </span>{' '}
             to identify, engage, and recruit qualified candidates across various

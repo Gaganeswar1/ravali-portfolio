@@ -31,9 +31,9 @@ export default function Home() {
           zIndex: 0,
           pointerEvents: "none",
           background:
-            "radial-gradient(circle at 15% 18%, rgba(16,185,129,0.05), transparent 50%)," +
-            "radial-gradient(circle at 88% 82%, rgba(124,58,237,0.04), transparent 52%)," +
-            "#0F172A",
+          "radial-gradient(circle at 18% 22%, rgba(176,48,96,.12), transparent 45%)," +
+          "radial-gradient(circle at 82% 78%, rgba(139,30,63,.10), transparent 45%)," +
+          "#140A0F",
         }}
       />
 
@@ -46,7 +46,7 @@ export default function Home() {
           left: 0,
           right: 0,
           height: "3px",
-          background: "linear-gradient(90deg,#10B981,#059669)",
+          background: "linear-gradient(90deg,#B03060,#059669)",
           zIndex: 99999,
         }}
       />
@@ -82,7 +82,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
             style={{
-              color: "#10B981",
+              color: "#8B1E3F",
               letterSpacing: "4px",
               fontSize: "14px",
               fontWeight: 600,
@@ -153,9 +153,9 @@ export default function Home() {
               whileHover={{ y: -3, scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               style={{
-                background: "linear-gradient(135deg,#10B981,#059669)",
+                background: "linear-gradient(135deg,#8B1E3F,#B03060)",
                 boxShadow: "0 8px 22px rgba(16,185,129,.12)",
-                color: "#0F172A",
+                color: "#FFF",
                 textDecoration: "none",
                 padding: "14px 30px",
                 borderRadius: "12px",
@@ -199,7 +199,7 @@ export default function Home() {
                 style={{
                   minWidth: "190px",
                   padding: "22px",
-                  background: "rgba(15,23,42,.45)",
+                  background: "rgba(5,8,22,.65)",
                   backdropFilter: "blur(18px)",
                   WebkitBackdropFilter: "blur(18px)",
                   border: "1px solid rgba(16,185,129,.15)",
@@ -207,7 +207,7 @@ export default function Home() {
                   boxShadow: "0 8px 25px rgba(0,0,0,.35)",
                 }}
               >
-                <h2 style={{ margin: 0, color: "#10B981", fontSize: "28px" }}>
+                <h2 style={{ margin: 0, color: "#B03060", fontSize: "28px" }}>
                   {item.title}
                 </h2>
 

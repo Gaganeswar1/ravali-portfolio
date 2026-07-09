@@ -84,10 +84,10 @@ export default function Skills() {
                 transition: { duration: 0.25 },
               }}
               style={{
-                background: 'rgba(15,23,42,.45)',
+                background: 'rgba(40,18,28,.55)',
                 backdropFilter: 'blur(18px)',
                 WebkitBackdropFilter: 'blur(18px)',
-                border: '1px solid rgba(16,185,129,.15)',
+                border: '1px solid rgba(176,48,96,.20)',
                 borderRadius: '22px',
                 padding: '42px 30px',
                 display: 'flex',
@@ -105,7 +105,7 @@ export default function Skills() {
                   '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
+                e.currentTarget.style.border = '1px solid rgba(176,48,96,.20)';
                 e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
               }}
             >
