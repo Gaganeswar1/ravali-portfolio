@@ -115,7 +115,7 @@ export default function Navbar() {
                     : "none",
                 filter:
                   active === id
-                    ? "drop-shadow(0 0 16px rgba(16,185,129,1)"
+                    ? "drop-shadow(0 0 16px rgba(16,185,129,1))"
                     : "none",
               }}
             >

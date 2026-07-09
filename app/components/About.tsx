@@ -43,7 +43,7 @@ export default function About() {
           onMouseEnter={(e) => {
             e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
             e.currentTarget.style.boxShadow =
-              '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
+              '0 0 35px rgba(16,185,129,.12),0 10px 35px rgba(0,0,0,.35)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.border = '1px solid rgba(16,185,129,.15)';
@@ -111,7 +111,7 @@ export default function About() {
                   padding: '10px 16px',
                   borderRadius: '999px',
                   background: 'rgba(255,255,255,.05)',
-                  border: '1px solid rgba(56,189,248,.12)',
+                  border: '1px solid rgba(16,185,129,.12)',
                   color: '#E2E8F0',
                   fontSize: '14px',
                   fontWeight: 500,
@@ -142,7 +142,7 @@ export default function About() {
                 key={item.title}
                 style={{
                   background: 'rgba(255,255,255,.04)',
-                  border: '1px solid rgba(56,189,248,.12)',
+                  border: '1px solid rgba(16,185,129,.12)',
                   borderRadius: '16px',
                   padding: '22px',
                   textAlign: 'center',

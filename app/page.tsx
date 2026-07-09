@@ -102,7 +102,7 @@ export default function Home() {
               margin: 0,
               color: "#FFFFFF",
               lineHeight: 1.05,
-              textShadow: "0 0 18px rgba(56,189,248,.12)",
+              textShadow: "0 0 18px rgba(16,185,129,.12)",
             }}
           >
             RAVALI PALA
@@ -154,7 +154,7 @@ export default function Home() {
               whileTap={{ scale: 0.98 }}
               style={{
                 background: "linear-gradient(135deg,#10B981,#059669)",
-                boxShadow: "0 8px 22px rgba(56,189,248,.12)",
+                boxShadow: "0 8px 22px rgba(16,185,129,.12)",
                 color: "#0F172A",
                 textDecoration: "none",
                 padding: "14px 30px",
@@ -177,7 +177,7 @@ export default function Home() {
                 borderRadius: "12px",
                 background: "rgba(255,255,255,.05)",
                 backdropFilter: "blur(18px)",
-                border: "1px solid rgba(56,189,248,.18)",
+                border: "1px solid rgba(16,185,129,.18)",
               }}
             >
               Let&apos;s Connect
@@ -221,11 +221,11 @@ export default function Home() {
       </section>
 
       <div style={{ position: "relative", zIndex: 2 }}>
-      <About />
-  { <Skills /> }
-  {<Experience /> }
-  { <Contact /> }
-  { <Footer /> }
+        <About />
+        <Skills />
+        <Experience />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
