@@ -20,11 +20,11 @@ export default function Navbar() {
         return;
       }
 
-      const checkPoint = window.scrollY + 120;
+      const checkpoint = window.scrollY + 140;
       let current = "home";
 
       sections.forEach((section) => {
-        if (checkPoint >= section.offsetTop) {
+        if (checkpoint >= section.offsetTop) {
           current = section.id;
         }
       });
@@ -45,53 +45,16 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className="navbar"
-        style={{
-          position: "fixed",
-          top: 0,
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "98%",
-          maxWidth: "2800px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          background: "rgba(7,12,22,.72)",
-          backdropFilter: "blur(22px)",
-          WebkitBackdropFilter: "blur(22px)",
-          border: "1px solid rgba(255,255,255,.08)",
-          borderRadius: "18px",
-          boxShadow: "0 12px 40px rgba(0,0,0,.45)",
-          zIndex: 1000,
-        }}
-      >
+      <nav className="premium-navbar">
         <a
           href="#home"
+          className="navbar-logo"
           onClick={() => {
-            setOpen(false);
             setActive("home");
-          }}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            textDecoration: "none",
+            setOpen(false);
           }}
         >
-          <span style={{ fontSize: "30px", fontWeight: 800, color: "#fff" }}>
-            RP
-          </span>
-
-          <span
-            style={{
-              fontSize: "34px",
-              color: "#B03060",
-              marginLeft: "2px",
-              lineHeight: 1,
-            }}
-          >
-            .
-          </span>
+          RP<span>.</span>
         </a>
 
         <div className="nav-menu">
@@ -103,28 +66,19 @@ export default function Navbar() {
                 setActive(id);
                 setOpen(false);
               }}
-              style={{
-                color: active === id ? "#FFFFFF" : "#94A3B8",
-                textDecoration: "none",
-                fontSize: "15px",
-                fontWeight: active === id ? 700 : 500,
-                transition: ".25s",
-                textShadow:
-                  active === id
-                    ? "0 0 35px rgba(176,48,96,.9)"
-                    : "none",
-                filter:
-                  active === id
-                    ? "drop-shadow(0 0 16px rgba(16,185,129,1))"
-                    : "none",
-              }}
+              className={active === id ? "nav-link active" : "nav-link"}
             >
-              {id.toUpperCase()}
+              {id}
             </a>
           ))}
         </div>
 
-        <button className="mobile-menu-btn" onClick={() => setOpen(!open)}>
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setOpen((previous) => !previous)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
+        >
           {open ? "×" : "☰"}
         </button>
       </nav>
@@ -133,9 +87,10 @@ export default function Navbar() {
         {open && (
           <motion.div
             className="mobile-dropdown"
-            initial={{ opacity: 0, y: -15 }}
+            initial={{ opacity: 0, y: -14 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
+            exit={{ opacity: 0, y: -14 }}
+            transition={{ duration: 0.2 }}
           >
             {navItems.map((id) => (
               <a
@@ -145,15 +100,13 @@ export default function Navbar() {
                   setActive(id);
                   setOpen(false);
                 }}
-                style={{
-                  color: active === id ? "#B03060" : "#CBD5E1",
-                  textDecoration: "none",
-                  padding: "14px 10px",
-                  fontWeight: active === id ? 700 : 500,
-                  borderBottom: "1px solid rgba(255,255,255,.06)",
-                }}
+                className={
+                  active === id
+                    ? "mobile-nav-link active"
+                    : "mobile-nav-link"
+                }
               >
-                {id.toUpperCase()}
+                {id}
               </a>
             ))}
           </motion.div>

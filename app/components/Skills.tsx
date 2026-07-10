@@ -1,138 +1,105 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Skills() {
-  const skills = [
+  const skillGroups = [
     {
-      name: 'IT Recruitment',
-      logo: '👩‍💼',
+      number: "01",
+      title: "Recruitment",
+      description:
+        "End-to-end recruitment capabilities across multiple hiring models.",
+      skills: [
+        "IT Technical Recruitment",
+        "Candidate Sourcing",
+        "Candidate Screening",
+        "Talent Acquisition",
+        "Interview Coordination",
+        "Rate Negotiation",
+      ],
     },
     {
-      name: 'Candidate Sourcing',
-      logo: '🔎',
+      number: "02",
+      title: "Recruitment Platforms",
+      description:
+        "Tools and portals used to source and engage qualified candidates.",
+      skills: [
+        "LinkedIn Recruiter",
+        "Naukri",
+        "Monster",
+        "TechGig",
+        "Vendor Networks",
+      ],
     },
     {
-      name: 'LinkedIn Recruiter',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
+      number: "03",
+      title: "Technical Knowledge",
+      description:
+        "Foundational technical knowledge useful for screening IT profiles.",
+      skills: ["Core Java", "C", "JavaScript", "HTML", "CSS", "SQL"],
     },
     {
-      name: 'Naukri',
-      logo: '💼',
-    },
-    {
-      name: 'Interview Coordination',
-      logo: '📅',
-    },
-    {
-      name: 'Microsoft Office',
-      logo: 'https://img.icons8.com/color/96/microsoft-office-2019.png',
-    },
-    {
-      name: 'SQL',
-      logo: 'https://img.icons8.com/fluency/96/database.png',
+      number: "04",
+      title: "Professional Skills",
+      description:
+        "Interpersonal and organizational capabilities used in recruitment.",
+      skills: [
+        "Communication",
+        "Problem Solving",
+        "Relationship Building",
+        "Teamwork",
+        "Multi-tasking",
+        "Microsoft Office",
+      ],
     },
   ];
 
   return (
-    <section
-      id="skills"
-      style={{
-        background: 'transparent',
-        color: '#fff',
-        padding: '70px 20px',
-        textAlign: 'center',
-      }}
-    >
+    <section id="skills" className="premium-section">
       <motion.div
+        className="section-container"
         initial={{ opacity: 0, y: 55 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.6 }}
-        style={{
-          maxWidth: '900px',
-          margin: '0 auto',
-        }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.65 }}
       >
-        <h2 style={{ fontSize: '42px', marginBottom: '18px' }}>Skills</h2>
+        <div className="section-heading centered">
+          <span>CAPABILITIES</span>
+          <h2>Skills & Expertise</h2>
+          <p>
+            Recruitment expertise, sourcing platforms, and technical knowledge.
+          </p>
+        </div>
 
-        <p style={{ color: '#94A3B8', fontSize: '18px', marginBottom: '45px' }}>
-          Recruitment tools, technical knowledge and professional skills.
-        </p>
-
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2,1fr)',
-            gap: '28px',
-          }}
-        >
-          {skills.map((skill, index) => (
+        <div className="skills-grid">
+          {skillGroups.map((group, index) => (
             <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 45 }}
+              key={group.title}
+              className="premium-card skill-group-card"
+              initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{
                 duration: 0.5,
-                delay: index * 0.08,
-                ease: 'easeOut',
+                delay: index * 0.1,
               }}
-              whileHover={{
-                y: -6,
-                scale: 1.01,
-                transition: { duration: 0.25 },
-              }}
-              style={{
-                background: 'rgba(40,18,28,.55)',
-                backdropFilter: 'blur(18px)',
-                WebkitBackdropFilter: 'blur(18px)',
-                border: '1px solid rgba(176,48,96,.20)',
-                borderRadius: '22px',
-                padding: '42px 30px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: '20px',
-                minHeight: '220px',
-                transition: 'all .08s ease-out',
-                boxShadow: '0 10px 35px rgba(0,0,0,.35)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
-                e.currentTarget.style.boxShadow =
-                  '0 0 35px rgba(56,189,248,.12),0 10px 35px rgba(0,0,0,.35)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.border = '1px solid rgba(176,48,96,.20)';
-                e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
-              }}
+              whileHover={{ y: -7 }}
             >
-              {skill.logo.startsWith('http') ? (
-                <img
-                  src={skill.logo}
-                  alt={skill.name}
-                  style={{
-                    width: '70px',
-                    height: '70px',
-                    objectFit: 'contain',
-                  }}
-                />
-              ) : (
-                <div style={{ fontSize: '58px' }}>{skill.logo}</div>
-              )}
+              <div className="skill-card-top">
+                <span>{group.number}</span>
+                <div className="skill-card-line" />
+              </div>
 
-              <h3
-                style={{
-                  margin: 0,
-                  fontSize: '24px',
-                  fontWeight: 700,
-                  color: '#FFFFFF',
-                }}
-              >
-                {skill.name}
-              </h3>
+              <h3>{group.title}</h3>
+              <p>{group.description}</p>
+
+              <div className="skill-tags">
+                {group.skills.map((skill) => (
+                  <div key={skill} className="skill-tag">
+                    {skill}
+                  </div>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

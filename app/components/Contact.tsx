@@ -1,165 +1,105 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const contacts = [
     {
-      label: 'Email',
-      value: 'palaravali4663@gmail.com',
-      href: 'mailto:palaravali4663@gmail.com',
-      icon: 'https://img.icons8.com/fluency/48/new-post.png',
+      label: "Email",
+      value: "palaravali4663@gmail.com",
+      href: "mailto:palaravali4663@gmail.com",
+      icon: "✉",
     },
     {
-      label: 'Phone',
-      value: '+91 7013038653',
-      href: 'tel:+917013038653',
-      icon: 'https://img.icons8.com/fluency/48/phone.png',
+      label: "Phone",
+      value: "+91 7013038653",
+      href: "tel:+917013038653",
+      icon: "☎",
     },
     {
-      label: 'LinkedIn',
-      value: 'View Profile →',
-      href: 'https://linkedin.com/in/ravali-pala-0bb781211',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
+      label: "LinkedIn",
+      value: "View Professional Profile",
+      href: "https://linkedin.com/in/ravali-pala-0bb781211",
+      icon: "in",
     },
   ];
 
   return (
-    <section id="contact" style={{ background: 'transparent', color: 'white' }}>
+    <section id="contact" className="premium-section">
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
+        className="section-container"
+        initial={{ opacity: 0, y: 55 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        style={{ maxWidth: '1050px', margin: '0 auto' }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.65 }}
       >
-        <h2
-          style={{
-            textAlign: 'center',
-            fontSize: '42px',
-            marginBottom: '15px',
-          }}
-        >
-          Let&apos;s Connect
-        </h2>
+        <div className="section-heading centered">
+          <span>GET IN TOUCH</span>
+          <h2>Let&apos;s Connect</h2>
+          <p>
+            Open to IT Technical Recruitment, Talent Acquisition, and HR
+            Recruitment opportunities.
+          </p>
+        </div>
 
-        <p
-          style={{
-            textAlign: 'center',
-            color: '#94A3B8',
-            fontSize: '18px',
-            marginBottom: '60px',
-          }}
-        >
-          Open to IT Technical Recruitment, Talent Acquisition & HR Recruitment roles.
-        </p>
-
-        <motion.div
-          whileHover={{ y: -6, scale: 1.01, transition: { duration: 0.25 } }}
-          style={{
-            background: 'rgba(40,18,28,.55)',
-            backdropFilter: 'blur(18px)',
-            WebkitBackdropFilter: 'blur(18px)',
-            border: '1px solid rgba(176,48,96,.20)',
-            borderRadius: '22px',
-            padding: '42px',
-            boxShadow: '0 10px 35px rgba(0,0,0,.35)',
-            transition: 'all .08s ease-out',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(16,185,129,.45)';
-            e.currentTarget.style.boxShadow =
-              '0 0 35px rgba(16,185,129,.12),0 10px 35px rgba(0,0,0,.35)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.border = '1px solid rgba(176,48,96,.20)';
-            e.currentTarget.style.boxShadow = '0 10px 35px rgba(0,0,0,.35)';
-          }}
-        >
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit,minmax(250px,1fr))',
-              gap: '28px',
-            }}
+        <div className="contact-layout">
+          <motion.div
+            className="premium-card contact-intro-card"
+            whileHover={{ y: -6 }}
           >
+            <span className="card-label">Available for Opportunities</span>
+
+            <h3>Let&apos;s build meaningful professional connections.</h3>
+
+            <p>
+              Feel free to contact me regarding IT recruitment, talent
+              acquisition, contract hiring, or relevant professional
+              opportunities.
+            </p>
+
+            <a
+              href="/Ravali_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="primary-button"
+            >
+              Download Resume
+            </a>
+          </motion.div>
+
+          <div className="contact-options">
             {contacts.map((item, index) => (
               <motion.a
                 key={item.label}
                 href={item.href}
-                target={item.label === 'LinkedIn' ? '_blank' : undefined}
+                target={item.label === "LinkedIn" ? "_blank" : undefined}
                 rel={
-                  item.label === 'LinkedIn' ? 'noopener noreferrer' : undefined
+                  item.label === "LinkedIn"
+                    ? "noopener noreferrer"
+                    : undefined
                 }
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.12 }}
-                whileHover={{ y: -4 }}
-                style={{
-                  textDecoration: 'none',
-                  background: 'rgba(255,255,255,.04)',
-                  border: '1px solid rgba(16,185,129,.12)',
-                  borderRadius: '16px',
-                  padding: '24px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '15px',
-                  transition: '.3s',
+                className="contact-option-card"
+                initial={{ opacity: 0, x: 25 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.45,
+                  delay: index * 0.1,
                 }}
+                whileHover={{ x: 6 }}
               >
-                <img src={item.icon} width="32" height="32" alt={item.label} />
+                <div className="contact-icon">{item.icon}</div>
 
                 <div>
-                  <div
-                    style={{
-                      color: '#94A3B8',
-                      fontSize: '14px',
-                      marginBottom: '6px',
-                    }}
-                  >
-                    {item.label}
-                  </div>
-
-                  <div
-                    style={{
-                      color: '#E2E8F0',
-                      fontSize: '16px',
-                      fontWeight: 600,
-                    }}
-                  >
-                    {item.value}
-                  </div>
+                  <span>{item.label}</span>
+                  <h4>{item.value}</h4>
                 </div>
+
+                <div className="contact-arrow">→</div>
               </motion.a>
             ))}
           </div>
-
-          <div
-            style={{
-              marginTop: '38px',
-              paddingTop: '28px',
-              borderTop: '1px solid rgba(255,255,255,.08)',
-              display: 'flex',
-              justifyContent: 'center',
-            }}
-          >
-            <a
-              href="/Ravali_resume.pdf"
-              target="_blank"
-              style={{
-                background: 'linear-gradient(135deg,#8B1E3F,#B03060)',
-                color: '#FFF',
-                textDecoration: 'none',
-                padding: '14px 30px',
-                borderRadius: '12px',
-                fontWeight: 700,
-                boxShadow: '0 8px 22px rgba(16,185,129,.12)',
-              }}
-            >
-              Download Resume
-            </a>
-          </div>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );

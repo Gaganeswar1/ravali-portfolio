@@ -1,275 +1,107 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Experience() {
-  const experience = [
-    {
-      company: 'Persistence',
-      role: 'IT Technical Recruiter',
-      duration: 'Sep 2021 – Jan 2023',
-      current: false,
+  const responsibilities = [
+    "Managed end-to-end IT recruitment for Persistent Systems India across Full-Time, Contract, C2H, and C2C positions.",
+    "Handled requirement analysis, candidate sourcing, resume screening, interview coordination, rate negotiation, and offer closure.",
+    "Sourced qualified candidates through LinkedIn Recruiter, Naukri, Monster, TechGig, and vendor networks.",
+    "Collaborated with Account Managers and BDMs to understand client requirements and deliver relevant profiles within timelines.",
+    "Conducted candidate screening calls to assess skills, availability, compensation expectations, and job interest.",
+    "Coordinated with candidates, consultants, employers, and vendors for rate confirmation and profile submissions.",
+    "Maintained recruitment databases, candidate pipelines, interview schedules, and submission reports.",
+  ];
 
-      achievements: [
-        'Managed end-to-end IT recruitment for Persistent Systems India, hiring for Full-Time, Contract, and C2H/C2C positions.',
-        'Handled the complete recruitment lifecycle, including requirement analysis, candidate sourcing, resume screening, interviewing, rate negotiation, and offer closure.',
-        'Sourced candidates using Naukri, LinkedIn Recruiter, Monster, and vendor networks.',
-        'Collaborated with Account Managers and BDMs to understand client requirements and deliver suitable candidates within timelines.',
-        'Screened and shortlisted candidate profiles based on technical skills, experience, and client requirements.',
-        'Conducted candidate screening calls to assess technical skills, availability, compensation expectations, and interest in contract opportunities.',
-        'Coordinated with employers and consultants for rate negotiations, rate confirmations, and profile submissions.',
-        'Maintained recruitment databases, tracked submissions, interview schedules, and candidate pipelines.',
-        'Built and maintained strong relationships with candidates, vendors, employers, and internal stakeholders.',
-      ],
-
-      tech: [
-        'LinkedIn Recruiter',
-        'Naukri',
-        'Monster',
-        'TechGig',
-        'MS Office',
-        'Excel',
-      ],
-    },
+  const tools = [
+    "LinkedIn Recruiter",
+    "Naukri",
+    "Monster",
+    "TechGig",
+    "MS Office",
+    "Excel",
   ];
 
   return (
-    <section
-      id="experience"
-      style={{
-        background: 'transparent',
-        color: '#fff',
-        padding: '70px 20px',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '1100px',
-          margin: '0 auto',
-        }}
+    <section id="experience" className="premium-section">
+      <motion.div
+        className="section-container"
+        initial={{ opacity: 0, y: 55 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.65 }}
       >
-        <h2
-          style={{
-            textAlign: 'center',
-            fontSize: '42px',
-            marginBottom: '18px',
-          }}
-        >
-          Experience
-        </h2>
+        <div className="section-heading centered">
+          <span>CAREER JOURNEY</span>
+          <h2>Professional Experience</h2>
+          <p>
+            Experience in IT recruitment, candidate management, and stakeholder
+            coordination.
+          </p>
+        </div>
 
-        <p
-          style={{
-            textAlign: 'center',
-            color: '#94A3B8',
-            fontSize: '18px',
-            marginBottom: '70px',
-          }}
-        >
-          Professional journey focused on IT recruitment, talent acquisition and candidate management.
-        </p>
+        <div className="experience-wrapper">
+          <div className="experience-line" />
 
-        <div
-          style={{
-            position: 'relative',
-            paddingLeft: '45px',
-          }}
-        >
-          <div
-            style={{
-              position: 'absolute',
-              left: '18px',
-              top: 0,
-              bottom: 0,
-              width: '2px',
-              background:
-                'linear-gradient(to bottom,#B03060,rgba(16,185,129,.08))',
-            }}
-          />
+          <motion.div
+            className="experience-entry"
+            initial={{ opacity: 0, x: 35 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.65 }}
+          >
+            <div className="experience-dot" />
 
-          {experience.map((job, index) => (
-            <motion.div
-              key={job.role}
-              initial={{
-                opacity: 0,
-                y: 70,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.25,
-              }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.18,
-                ease: 'easeOut',
-              }}
-              style={{
-                position: 'relative',
-                marginBottom: '55px',
-              }}
-            >
-              <motion.div
-                initial={{
-                  scale: 0,
-                }}
-                whileInView={{
-                  scale: 1,
-                }}
-                transition={{
-                  delay: index * 0.2,
-                  type: 'spring',
-                  stiffness: 180,
-                }}
-                style={{
-                  position: 'absolute',
-                  left: '-36px',
-                  top: '28px',
-                  width: '16px',
-                  height: '16px',
-                  borderRadius: '50%',
-                  background: '#B03060',
-                  boxShadow: '0 0 22px rgba(16,185,129,.85)',
-                }}
-              />
-
-              <motion.div
-                whileHover={{
-                  y: -6,
-                  scale: 1.01,
-                  transition: {
-                    duration: 0.25,
-                  },
-                }}
-                style={{
-                  background: 'rgba(40,18,28,.55)',
-                  backdropFilter: 'blur(18px)',
-                  WebkitBackdropFilter: 'blur(18px)',
-                  border: '1px solid rgba(176,48,96,.20)',
-                  borderRadius: '22px',
-                  padding: '35px',
-                  boxShadow: '0 10px 35px rgba(0,0,0,.35)',
-                }}
-              >
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    flexWrap: 'wrap',
-                    gap: '18px',
-                  }}
-                >
-                  <div>
-                    <h3
-                      style={{
-                        margin: 0,
-                        fontSize: '28px',
-                        color: '#B03060',
-                      }}
-                    >
-                      {job.role}
-                    </h3>
-
-                    <p
-                      style={{
-                        marginTop: '8px',
-                        color: '#CBD5E1',
-                        fontSize: '17px',
-                      }}
-                    >
-                      {job.company}
-                    </p>
-                  </div>
-
-                  <span
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      height: '36px',
-                      padding: '0 16px',
-                      borderRadius: '999px',
-                      background: job.current
-                        ? 'rgba(34,197,94,.15)'
-                        : 'rgba(148,163,184,.15)',
-                      color: job.current ? '#22C55E' : '#CBD5E1',
-                      fontWeight: 600,
-                      fontSize: '13px',
-                      lineHeight: 1,
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
-                    {job.duration}
-                  </span>
+            <div className="premium-card experience-card">
+              <div className="experience-header">
+                <div>
+                  <span className="card-label">Professional Experience</span>
+                  <h3>IT Technical Recruiter</h3>
+                  <p className="company-name">Persistence</p>
                 </div>
 
-                <div
-                  style={{
-                    marginTop: '30px',
-                  }}
-                >
-                  <h4
-                    style={{
-                      color: '#FFFFFF',
-                      marginBottom: '18px',
-                    }}
-                  >
-                    Key Responsibilities
-                  </h4>
+                <span className="experience-duration">
+                  Sep 2021 – Jan 2023
+                </span>
+              </div>
 
-                  <ul
-                    style={{
-                      paddingLeft: '22px',
-                      color: '#CBD5E1',
-                      lineHeight: 1.9,
-                    }}
-                  >
-                    {job.achievements.map((item) => (
-                      <li key={item}>{item}</li>
+              <div className="experience-content">
+                <div>
+                  <h4>Key Responsibilities</h4>
+
+                  <ul className="responsibility-list">
+                    {responsibilities.map((item) => (
+                      <li key={item}>
+                        <span />
+                        {item}
+                      </li>
                     ))}
                   </ul>
+                </div>
 
-                  <h4
-                    style={{
-                      marginTop: '28px',
-                      marginBottom: '16px',
-                    }}
-                  >
-                    Tools & Skills
-                  </h4>
+                <div className="experience-sidebar">
+                  <h4>Tools & Platforms</h4>
 
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '12px',
-                    }}
-                  >
-                    {job.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        style={{
-                          padding: '10px 18px',
-                          borderRadius: '999px',
-                          background: 'rgba(255,255,255,.05)',
-                          border: '1px solid rgba(16,185,129,.12)',
-                          color: '#E2E8F0',
-                          fontSize: '14px',
-                        }}
-                      >
-                        {tech}
-                      </span>
+                  <div className="experience-tools">
+                    {tools.map((tool) => (
+                      <span key={tool}>{tool}</span>
                     ))}
                   </div>
+
+                  <div className="experience-focus">
+                    <span>Primary Focus</span>
+                    <h4>Talent Acquisition</h4>
+                    <p>
+                      Delivering qualified profiles while maintaining strong
+                      candidate and stakeholder relationships.
+                    </p>
+                  </div>
                 </div>
-              </motion.div>
-            </motion.div>
-          ))}
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
